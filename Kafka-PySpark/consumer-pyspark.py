@@ -9,9 +9,6 @@ from pymongo import MongoClient
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 
-import os
-os.environ["PYSPARK_PYTHON"] = "/opt/anaconda3/envs/twitter_env/bin/python"
-os.environ["PYSPARK_DRIVER_PYTHON"] = "/opt/anaconda3/envs/twitter_env/bin/python"
 # Establish connection to MongoDB
 client = MongoClient('localhost', 27017)
 db = client['bigdata_project'] 
